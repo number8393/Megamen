@@ -1,0 +1,13 @@
+app = "binary-option-bot"
+
+[build]
+image = "python:3.10-slim"
+
+[env]
+PORT = "8080"
+
+[experimental]
+auto_rollback = true
+
+[processes]
+app = "python main.py"
